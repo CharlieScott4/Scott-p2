@@ -31,11 +31,12 @@ function animate() {
 }
 
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
-
+//Slide 12+13 (SWAP Photo)
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
-
+var slideShowElement = document.getElementById('slideShow');
 	//Access the img element and replace its source
+	var imgElement = slideShowElement.querySelector('mUrl')
 	//with a new image from your images array which is loaded 
 	//from the JSON string
 	console.log('swap photo');
@@ -97,11 +98,12 @@ console.log(GalleryImage);
 function fetchJSON() {
 	mRequest.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
-	mJson = mRequest.responseText;	
+	mJson = JSON.parse(mRequest.responseText);
 		}
 };
 
 mRequest.open("GET", mUrl, true);
 mRequest.send();
 }
-	
+
+
