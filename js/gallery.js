@@ -126,4 +126,22 @@ function iterateJSON()
 	mImages[i].url = mJson.images[i].imgPath;
 	}
 }
+//LAST CLASS WORK
+$(document).ready(function() {
+	if ($(this).hasClass("rot90")) {
+		$(this).removeClass("rot90").addClass("rot270");
+	} else {
+		$(this).removeClass("rot270").addClass("rot90");
+}
+	$(".details").slideToggle();
+});
 
+$(document).ready(function() {
+function offsetNextPhoto() {
+var galleryWidth = $("#gallery").width();
+var nextPhotoWidth = $("#nextPhoto").width();
+$("#nextPhoto").css("left", galleryWidth - nextPhotoWidth);
+}
+offsetNextPhoto();
+$(window).resize(offsetNextPhoto);
+});
