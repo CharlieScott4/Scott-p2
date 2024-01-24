@@ -1,0 +1,31 @@
+ { "images": [
+        {
+            "imgPath": "img/places/salty.jpg",
+            "imgLocation": "Salty Springs",
+            "description": "Not enough loot too many heads",
+            "date": "IDK"
+        },
+        {
+            "imgPath": "img/places/tilted.jpg",
+            "imgLocation": "Tilted Towers",
+            "description": "The GOAT",
+            "date": "IDK"
+        },
+        {
+            "imgPath": "img/places/retail.webp",
+            "imgLocation": "Retail Row",
+            "description": "Great Location",
+            "date": "IDK"
+        },
+        {
+            "imgPath": "img/places/pleasantpark.webp",
+            "imgLocation": "Pleasant Park",
+            "description": "Stay Out of The Middle",
+            "date": "IDK"
+        },
+        {
+            "imgPath": "img/places/paradise.webp",
+            "imgLocation": "Paradise Palms",
+            "description": "Sandy City",
+            "date": "IDK"
+        } ]}

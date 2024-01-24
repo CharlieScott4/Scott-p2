@@ -235,5 +235,29 @@ function displayPhoto(index) {
 $(".selector").on("mouseover", function () {
 //stuff to do on mouseover
 });
-
+let moreBtn = $('')
 /*call to access the information in the JSON file. */
+
+//*PART 4
+$(document).ready(function() {
+	var queryString = window.location.search;
+	if (queryString) {
+	queryString = queryString.slice(6);
+	console.log(queryString);
+	mUrl = queryString;
+ } else {
+	mUrl = 'extras.json';
+ }
+const urlParams = new URLSearchParams(queryString);
+	const location = urlParams.get('imglocation')
+	console.log(location);
+
+	
+	const description = urlParams.get('description')
+	console.log(description);
+	
+	
+	const date = urlParams.get('date')
+	console.log(date);
+
+});
